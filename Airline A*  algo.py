@@ -1,4 +1,4 @@
-import heapq
+import heapq 
 
 def a_star_search(graph, start, goal, heuristic):
     open_list = []
