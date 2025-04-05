@@ -3,7 +3,7 @@ def alpha_beta_pruning(node, depth, alpha, beta, maximizing_player):
         return node['value']
     
     if maximizing_player:
-        max_eval = float('-inf')
+        max_eval = float('-inf') 
         for child in node['children']:
             eval = alpha_beta_pruning(child, depth - 1, alpha, beta, False)
             max_eval = max(max_eval, eval)
