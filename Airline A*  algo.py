@@ -9,7 +9,7 @@ def a_star_search(graph, start, goal, heuristic):
 
     f_score = {node: float('inf') for node in graph}
     f_score[start] = heuristic[start]
-
+ 
     came_from = {}
 
     while open_list:
