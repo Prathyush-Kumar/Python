@@ -11,7 +11,7 @@ def hill_climb(start, step_size, max_iterations):
         neighbor = current + random.choice([-step_size, step_size])
         neighbor_value = objective_function(neighbor)
         
-        if neighbor_value > current_value:
+        if neighbor_value > current_value: 
             current, current_value = neighbor, neighbor_value
         else:
             break  # Stop if no improvement
