@@ -7,7 +7,7 @@ class Graph:
         self.weight = {}
         self.heuristic = {}
 
-    def addedges(self, u, v, weight: int = 1):
+    def addedges(self, u, v, weight: int = 1): 
         self.graph[u].append(v)
         self.graph[v].append(u)
         self.weight[(u, v)] = weight
